@@ -1,14 +1,22 @@
+:root{
+    --cor-de-fundo: #5AB5E5;
+    --cor-da-borda: #ffffff;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: var(--cor-de-fundo);
 
 }
 
+
 .container {
     width: 100vw;
-    height: 100vh;
-    background: #6C7A89;
+    
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,5 +25,21 @@ body {
 }
 
 .container__imagem{
-    background-color: red;
+    text-align: center;
+    
+}
+
+
+.imagem{
+    padding: 15px;
+    border: 3px solid var(--cor-da-borda);
+    border-radius: 10px;
+    width: 300px;
+    height: 290px;
+    margin-bottom: 5em;
+    
+}
+
+.imagem:active{
+    border: #F18F01;
 }
