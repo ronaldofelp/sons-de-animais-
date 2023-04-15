@@ -3,8 +3,13 @@
     --cor-da-borda: #B7CECE;
     --cor-de-fundo-click: #5AB5E5;
     --cor-da-borda-click: #F18F01 ;
-;
+
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 body {
