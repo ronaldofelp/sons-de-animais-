@@ -1,6 +1,9 @@
 :root{
-    --cor-de-fundo: #5AB5E5;
-    --cor-da-borda: #ffffff;
+    --cor-de-fundo: #ffffff;
+    --cor-da-borda: #B7CECE;
+    --cor-de-fundo-click: #5AB5E5;
+    --cor-da-borda-click: #F18F01 ;
+;
 }
 
 
@@ -15,8 +18,6 @@ body {
 
 .container {
     width: 100vw;
-    
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,6 +28,14 @@ body {
 .container__imagem{
     text-align: center;
     
+}
+
+.titulo{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.7em auto;
+
+    background-color: var(--cor-da-borda);
 }
 
 
@@ -40,6 +49,9 @@ body {
     
 }
 
-.imagem:active{
-    border-color:#F18F01 ;
+.ativo{
+    border-color: var(--cor-da-borda-click) ;
+    background-color: var(--cor-de-fundo-click);
+    
+
 }
