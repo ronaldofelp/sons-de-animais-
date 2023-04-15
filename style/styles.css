@@ -41,5 +41,5 @@ body {
 }
 
 .imagem:active{
-    border: #F18F01;
+    border-color:#F18F01 ;
 }
