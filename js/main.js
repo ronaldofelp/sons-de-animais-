@@ -1,24 +1,35 @@
-function tocaSom() {
-    document.querySelector("#som_animal_vaca").play();
+function playSound(selectorAudio) {
+
+    document.querySelector(selectorAudio).play();
+
 }
 
-const listaDeTeclas = document.querySelectorAll(".imagem");
+const keyList = document.querySelectorAll(".image");
 
-for (let i = 0; i < listaDeTeclas.length; i++) {
-    const tecla = listaDeTeclas[i];
+for (let i = 0; i < keyList.length; i++) {
 
-    tecla.onclick = function() {
-        tocaSom();
+    const key = keyList[i];
+
+
+    const animals = key.classList[1]
+
+
+    const idAudio = `#sound_animal_${animals}`
+
+    console.log(idAudio)
+
+    key.onclick = function () {
+        playSound(idAudio)
     };
 
-    tecla.addEventListener('click', function() {
-        
-        this.classList.add('ativo');
+    key.addEventListener('click', function () {
 
-        
-        for (let j = 0; j < listaDeTeclas.length; j++) {
-            if (listaDeTeclas[j] !== this) {
-                listaDeTeclas[j].classList.remove('ativo');
+        this.classList.add('active');
+
+
+        for (let j = 0; j < keyList.length; j++) {
+            if (keyList[j] !== this) {
+                keyList[j].classList.remove('active');
             }
         }
     });

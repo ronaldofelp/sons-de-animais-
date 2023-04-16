@@ -25,21 +25,21 @@ body {
     
 }
 
-.container__imagem{
+.container__image{
     text-align: center;
     
 }
 
-.titulo{
+.title{
+    width: 90%;
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0.7em auto;
-
     background-color: var(--cor-da-borda);
 }
 
 
-.imagem{
+.image{
     padding: 15px;
     border: 3px solid var(--cor-da-borda);
     border-radius: 10px;
@@ -49,7 +49,7 @@ body {
     
 }
 
-.ativo{
+.active{
     border-color: var(--cor-da-borda-click) ;
     background-color: var(--cor-de-fundo-click);
     
